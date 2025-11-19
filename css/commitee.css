@@ -1,0 +1,128 @@
+/* --- Styling for the Committee Page --- */
+
+.committee-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.committee-container h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #007BFF; 
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.core-committee h2,
+.technical-committee h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+/* Core Committee Table Styling */
+.core-committee table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.core-committee td {
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    vertical-align: top;
+    font-size: 1em;
+}
+
+.role-cell {
+    width: 30%;
+    font-weight: 700;
+    background-color: #f7f7f7; 
+    color: #333;
+}
+
+.member-cell {
+    width: 70%;
+    color: #555;
+}
+
+.member-cell strong {
+    color: #000;
+    display: block;
+    margin-bottom: 3px;
+}
+
+
+/* Technical Program Committee List Styling (Grid/Cards) */
+.member-list {
+    display: grid;
+    /* 3 columns on large screen, 2 on medium, 1 on small */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.member-card {
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.member-card:hover {
+    background-color: #f0f8ff;
+    border-color: #007BFF;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.1);
+}
+
+.member-card strong {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Specific style for Joint Secretaries for visual emphasis */
+.member-card.joint-secretary {
+    background-color: #e6f3ff;
+    border: 2px solid #007BFF;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .committee-container {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+    .core-committee table, 
+    .core-committee tbody, 
+    .core-committee tr, 
+    .core-committee td {
+        display: block;
+        width: 100%;
+    }
+    .role-cell {
+        background-color: #e9e9e9; /* Darker role cell background on mobile */
+    }
+    .core-committee td {
+        padding: 10px;
+        text-align: left;
+    }
+    .role-cell::after {
+        content: ":"; 
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    .member-list {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,0 +1,107 @@
+
+
+/* Main section styling */
+.advisory-board {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.advisory-board h1 {
+    font-size: 2.5em;
+    color: #011f4b; 
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-bottom: 3px solid #f6b352;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Individual member card styling */
+.member-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+.member-card1{
+    background-color: #f5e9ce;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border-radius: 50%; 
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    border: 3px solid #011f4b; 
+    overflow: hidden;
+}
+
+/* Style for actual image when you add it */
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Member details styling */
+.member-details h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.member-details p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .advisory-board h1 {
+        font-size: 2em;
+    }
+    .board-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .member-card {
+        padding: 15px;
+    }
+    .member-details h3 {
+        font-size: 1.2em;
+    }
+}
