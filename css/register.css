@@ -1,0 +1,69 @@
+/* registration.css */
+
+/* Ensure the main content takes up the screen height below the header */
+.registration-main {
+    padding-top: 80px; /* Adjust based on your header's height */
+    min-height: 100vh;
+    background-color: #f4f7f9; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.update-message-container {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px;
+}
+
+.update-message-container h1 {
+    font-size: 2.5em;
+    color: #011f4b; /* Primary color */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #f6b352; /* Accent color under title */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.update-text {
+    font-size: 3em;
+    font-weight: 700;
+    color: #cc0000; /* Red/Alert color for prominence */
+    margin: 30px 0;
+    animation: pulse 1.5s infinite; /* Simple animation to draw attention */
+}
+
+.update-message-container p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #011f4b; /* Primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #f6b352; /* Accent color on hover */
+    color: #011f4b;
+}
+
+/* Optional: Animation for the update message */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
