@@ -120,14 +120,25 @@ nav ul li a:hover {
 }
 
 /* --- HERO SECTION --- */
+/* --- HERO SECTION --- */
 .hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 100dvh; /* allows section to grow slightly if content is taller */
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/*.hero {
     position: relative;
     overflow: hidden;
     height: 100vh; 
     text-align: center;
     padding: 100px 20px;
     color: #fff;
-}
+}*/
 .hero-video {
     position: absolute;
     top: 0;
@@ -728,4 +739,5 @@ footer > p {
 
 
    
+
 
