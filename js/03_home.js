@@ -1,7 +1,7 @@
 // All messages that will scroll one-by-one
 const messages = [
     "🔴 Registration Open — Limited Seats!",
-    "📢 Conference Date: 6th–7th April 2026, Bihar",
+    "📢 Conference Date: 21-22 May 2026, Bihar",
     "🌐 Venue: BCE Campus"
 ];
 
@@ -26,13 +26,13 @@ setInterval(updateAnnouncement, 5000);
 
 
 
-// Set the date and time for the countdown: April 17, 2026
+// Set the date and time for the countdown: May 21, 2026
 // Note: Month is 0-indexed in JavaScript Date (0 = Jan, 3 = April)
 // Time is set to 00:00:00 (midnight) by default if not specified, 
 // but it's best to be explicit.
 
 // Target date: "April 17, 2026 00:00:00"
-const targetDate = new Date("April 17, 2026 00:00:00").getTime();
+const targetDate = new Date("May 21, 2026 00:00:00").getTime();
 
 // Helper function to add a leading zero if the number is less than 10
 function formatTime(t) {
