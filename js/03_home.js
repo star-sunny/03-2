@@ -1,7 +1,7 @@
 // All messages that will scroll one-by-one
 const messages = [
     "🔴 Registration Open — Limited Seats!",
-    "📢 Conference Date: 21-22 May 2026, Bihar",
+    "📢 Conference Date: 25-26 September 2026, Bihar",
     "🌐 Venue: BCE Campus"
 ];
 
@@ -32,7 +32,7 @@ setInterval(updateAnnouncement, 5000);
 // but it's best to be explicit.
 
 // Target date: "April 17, 2026 00:00:00"
-const targetDate = new Date("May 21, 2026 00:00:00").getTime();
+const targetDate = new Date("September 25, 2026 00:00:00").getTime();
 
 // Helper function to add a leading zero if the number is less than 10
 function formatTime(t) {
