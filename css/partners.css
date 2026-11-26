@@ -1,0 +1,26 @@
+.partners-section {
+    padding: 64px 20px;
+    background: #f7f9fc;
+    color: #011f4b;
+}
+
+.partners-section h2 {
+    color: #011f4b;
+    text-align: center;
+}
+
+.partner-card {
+    display: grid;
+    place-items: center;
+    min-height: 190px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.partner-card img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+}
